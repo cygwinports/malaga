@@ -1,0 +1,8 @@
+category: Text
+requires: cygwin glib2
+external-source: malaga
+sdesc: "Grammar development environment for natural languages (runtime lib)"
+ldesc: "Malaga is a software package for the development and application 
+of grammars that are used for the analysis of words and sentences of 
+natural languages. It contains a programming language for the modelling 
+of morphology and syntax grammars."

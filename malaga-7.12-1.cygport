@@ -1,0 +1,11 @@
+DESCRIPTION="Grammar Development Environment for Natural Languages"
+HOMEPAGE="http://home.arcor.de/bjoern-beutel/malaga/"
+SRC_URI="http://home.arcor.de/bjoern-beutel/malaga/${P}.tgz"
+
+PKG_NAMES="${PN} lib${PN}${PVP[0]} lib${PN}-devel"
+PKG_HINTS="bin lib devel"
+PKG_CONTENTS[0]="etc/ usr/bin/*.exe usr/share/"
+PKG_CONTENTS[1]="usr/bin/*-${PVP[0]}.dll"
+PKG_CONTENTS[2]="usr/include/ usr/lib/"
+
+export INSTALL_INFO=true
