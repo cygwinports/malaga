@@ -1,5 +1,5 @@
 category: Text
-requires: cygwin glib2
+requires: glib2
 external-source: malaga
 sdesc: "Grammar development environment for natural languages (runtime lib)"
 ldesc: "Malaga is a software package for the development and application 

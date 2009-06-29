@@ -1,5 +1,5 @@
 category: Text
-requires: cygwin libmalaga7 glib2 gtk2-x11 libcairo2 libreadline6 pango
+requires: libmalaga7 glib2 gtk2-x11 libcairo2 libreadline6 pango
 sdesc: "Grammar development environment for natural languages (tools)"
 ldesc: "Malaga is a software package for the development and application 
 of grammars that are used for the analysis of words and sentences of 
