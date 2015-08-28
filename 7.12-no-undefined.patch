@@ -1,0 +1,10 @@
+--- origsrc/malaga-7.12/Makefile.in	2008-02-28 12:38:21.000000000 -0600
++++ src/malaga-7.12/Makefile.in	2008-04-17 12:04:46.375000000 -0500
+@@ -185,6 +185,7 @@
+ 	@echo "Linking libmalaga"
+ 	@$(LIBTOOL) --mode=link $(LINK) $(LIBMALAGA_OBJS:.o=.lo) $(GLIB_LIBS) \
+           -lm -o libmalaga.la -version-info $(LIBMALAGA_VERSION) \
++	  -no-undefined \
+ 	  -rpath @libdir@
+ 
+ # malaga ----------------------------------------------------------------------

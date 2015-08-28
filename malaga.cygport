@@ -1,0 +1,18 @@
+NAME="malaga"
+VERSION=7.12
+RELEASE=1
+CATEGORY="Text"
+SUMMARY="Grammar development environment for natural languages"
+DESCRIPTION="Malaga is a software package for the development and application
+of grammars that are used for the analysis of words and sentences of natural
+languages. It contains a programming language for the modelling of morphology
+and syntax grammars."
+HOMEPAGE="http://home.arcor.de/bjoern-beutel/malaga/"
+SRC_URI="http://home.arcor.de/bjoern-beutel/malaga/malaga-${VERSION}.tgz"
+
+PKG_NAMES="malaga libmalaga7 libmalaga-devel"
+malaga_CONTENTS="etc/ usr/bin/*.exe usr/share/"
+libmalaga7_CONTENTS="usr/bin/cygmalaga-7.dll"
+libmalaga_devel_CONTENTS="usr/include/ usr/lib/"
+
+export INSTALL_INFO=true

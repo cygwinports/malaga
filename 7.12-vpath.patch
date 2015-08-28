@@ -10,11 +10,3 @@
  
  uninstall:
  	for f in $(MALAGA_BIN); do rm -f $(bindir)/$$f; done
-@@ -185,6 +184,7 @@
- 	@echo "Linking libmalaga"
- 	@$(LIBTOOL) --mode=link $(LINK) $(LIBMALAGA_OBJS:.o=.lo) $(GLIB_LIBS) \
-           -lm -o libmalaga.la -version-info $(LIBMALAGA_VERSION) \
-+	  -no-undefined \
- 	  -rpath @libdir@
- 
- # malaga ----------------------------------------------------------------------
