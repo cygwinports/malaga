@@ -1,0 +1,17 @@
+--- origsrc/malaga-7.12/Makefile.in	2015-08-28 12:00:17.793229900 -0500
++++ src/malaga-7.12/Makefile.in	2015-08-28 12:03:52.866540800 -0500
+@@ -99,12 +99,12 @@ info: malaga.info
+ install: all info
+ 	$(INSTALL_DIR) $(bindir)
+ 	for f in $(MALAGA_BIN); do \
+-	  $(LIBTOOL) --mode=install $(INSTALL_PROGRAM) -s $$f $(bindir)/$$f; \
++	  $(LIBTOOL) --mode=install $(INSTALL_PROGRAM) $$f $(bindir)/$$f; \
+ 	  done
+ 	$(INSTALL_DIR) $(includedir)
+ 	$(INSTALL_DATA) $(srcdir)/malaga.h $(includedir)/malaga.h
+ 	$(INSTALL_DIR) $(libdir)
+-	$(LIBTOOL) --mode=install $(INSTALL_DATA) -s libmalaga.la \
++	$(LIBTOOL) --mode=install $(INSTALL_DATA) libmalaga.la \
+ 	  $(libdir)/libmalaga.la
+ 	$(INSTALL_DIR) $(datadir)/malaga
+ 	$(INSTALL_DATA) $(srcdir)/malaga.el $(datadir)/malaga/malaga.el

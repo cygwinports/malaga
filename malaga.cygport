@@ -10,13 +10,16 @@ and syntax grammars."
 HOMEPAGE="http://home.arcor.de/bjoern-beutel/malaga/"
 SRC_URI="http://home.arcor.de/bjoern-beutel/malaga/malaga-${VERSION}.tgz"
 PATCH_URI="
+	7.12-debuginfo.patch
 	7.12-no-undefined.patch
 	7.12-vpath.patch
 "
 
 PKG_NAMES="malaga libmalaga7 libmalaga-devel"
-malaga_CONTENTS="etc/ usr/bin/*.exe usr/share/"
+malaga_CONTENTS="usr/bin/*.exe usr/share/"
+libmalaga7_CATEGORY="Libs"
 libmalaga7_CONTENTS="usr/bin/cygmalaga-7.dll"
+libmalaga_devel_CATEGORY="Libs"
 libmalaga_devel_CONTENTS="usr/include/ usr/lib/"
 
 export INSTALL_INFO=true
