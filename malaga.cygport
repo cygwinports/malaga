@@ -1,6 +1,6 @@
 NAME="malaga"
 VERSION=7.12
-RELEASE=1
+RELEASE=2
 CATEGORY="Text"
 SUMMARY="Grammar development environment for natural languages"
 DESCRIPTION="Malaga is a software package for the development and application
@@ -9,6 +9,10 @@ languages. It contains a programming language for the modelling of morphology
 and syntax grammars."
 HOMEPAGE="http://home.arcor.de/bjoern-beutel/malaga/"
 SRC_URI="http://home.arcor.de/bjoern-beutel/malaga/malaga-${VERSION}.tgz"
+PATCH_URI="
+	7.12-no-undefined.patch
+	7.12-vpath.patch
+"
 
 PKG_NAMES="malaga libmalaga7 libmalaga-devel"
 malaga_CONTENTS="etc/ usr/bin/*.exe usr/share/"
